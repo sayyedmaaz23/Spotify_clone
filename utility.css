@@ -1,0 +1,49 @@
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.justify-center{
+    justify-content: center;
+    
+}
+
+.items-center{
+    align-items: center;
+}
+
+.red-border{
+    border: 2px solid red;
+}
+
+.darkbackground{
+    background-color: black;
+    /* color:white; */
+}
+
+.greybackground{
+    background-color: #121212;
+}
+
+.inverted{
+    filter: invert(1);
+}
+
+.round-border{
+    border-radius: 2%;
+}
+
+.my-3{
+    margin: 7px;
+}
+    
+.pd-3{
+    padding: 5px;
+}
+
+.space_around{
+    justify-content: space-around;
+}

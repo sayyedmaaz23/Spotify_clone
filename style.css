@@ -1,0 +1,308 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+
+body{
+    background-color: black;  
+    /* color: white;  */
+}
+
+.left{
+    width: 355px;
+}
+
+.right{
+    /* max-width: 62rem; */
+    width: 80vw;
+    height: 98vh;
+}
+
+.home{
+    padding: 10px;
+}
+
+li{
+    display: flex;
+    width: 14px;
+    gap: 15px;
+    list-style: none;
+    padding-top: 14px;
+    font-weight: bold;
+}
+
+
+.library{
+    padding: 0 25px;
+    height: 50rem;
+    /* height: 88vh; */
+    position: relative;
+    gap: 15px;
+    /* width: 30vw; */
+    
+}
+
+.heading{
+    display: flex;
+    /* width: 14px; */
+    gap: 15px;
+    padding-top: 14px;
+    font-weight: bold;
+    align-items: center;
+    position:  absolute;
+    top: 0;
+    padding: 13px 0px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 21px;
+}
+
+.heading img{
+    width: 21px;
+}
+
+.footer a{
+    color:grey;
+    font-size: 10px;
+}
+
+.footer{
+
+    position: absolute ;
+    bottom: 0;
+}
+
+.buttons{
+    padding: 6px 10px;
+    position: absolute;
+    right: 0;
+}
+
+.right{
+    margin: 8px 0;
+    position: relative;
+    
+}
+.header{
+    background-color: rgb(34, 33, 33);
+}
+
+.header img{
+    width: 40px;  
+}
+
+.card{
+    width: 140px;
+    height: 200px;
+    font-size: 10px;
+    padding: 5px 2px;
+    background-color: #1f1f1f;
+    color: white;
+    margin: 10px;
+}
+
+.title{
+    padding: 2px 3px;
+    font-size: 16px;
+}
+
+.card img{
+    width: 140px;
+}
+
+.info{
+    padding: 0 3px;
+}
+
+.playbutton{
+    width: 20px;
+    height: 45px;
+    position: absolute;
+    top: 94px;
+    left: 42px;
+    opacity: 0;
+    transition: 5ms all ease-out ;
+}
+
+.cardcontainer{
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+
+.playlist{
+    margin-top: 20px;
+}
+
+.login{
+    height:37px;
+    width: 80px;
+    background-color: white;
+    border-radius: 50px 50px  50px 50px;
+    /* font-size: 15px; */
+    padding: 6px 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.login:hover{
+    padding: 3px 9px;
+}
+.signup{
+    cursor: pointer;
+    color:white;
+    background-color:#222121 ;
+    border-color: #222121;
+    border-style: none;
+
+}
+
+.player {
+    /* color: white; */
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+    background-color: rgb(103, 116, 103);
+    height: 50px;
+    gap: 12px;
+    border-radius: 50px 50px 50px 50px;
+}
+.player img{
+    width: 20px;
+    height: 30px;
+    width: auto;                     
+    /* height: 78%; */
+    /* display: block;   */
+}
+
+.player button{
+    height: 100%;                    /* Ensures buttons take the full height */
+    background: none;                /* Removes default button background */
+    border: none;                    /* Removes default border (to eliminate any outline) */
+    padding: 0;                      /* Ensures no extra space around buttons */
+    margin: 0;                       /* Removes margin to prevent any extra spacing */
+    outline: none;                   /* Removes any focus outline */
+}
+
+.songslist{
+    position: absolute;
+    top: 80px;
+    font-size: 14px;
+}
+
+.songslist li{
+    /* min-width: fit-content; */
+    width: 295px;
+    height: 5;
+    border: 1px solid;
+    border-radius: 5%;
+    margin: 15px 0;
+    padding: 4px 0;
+    /* width: 19.5vw; */
+}
+
+.songtile img{
+    /* gap: 15px; */
+    width: 27px;
+    height: 45px;
+    display: block;
+}
+
+.songtile{
+    /* gap:2vw; */
+    cursor: pointer;
+    justify-content: space-around;
+    width: 20.9px;
+    padding: 1px 4px;
+}
+
+.playnbutton{
+    position: relative;
+    right: -75px;
+    top: 6px;
+    font-weight: bolder;
+}
+
+.tileplogo{
+    position: relative;
+    right: -122px;
+    top: 0vh;
+    width: 25px;
+    height: 12px;
+}
+
+.mus{
+    margin-right: 6px;
+}
+
+.stitle{
+    width: 64px;
+}
+.hvrplaybtn{
+    position: absolute;
+    right: -40px;
+    top: 120px;
+    opacity: 0; 
+    transition: all 0.4s ease-out;   
+}
+
+.card:hover .hvrplaybtn{
+    top: 99px;
+    opacity: 1;
+    cursor: pointer;
+    height: 42px;
+}
+
+.card_playbutton{
+    height: 40px;
+}
+
+.playbar_buttons{
+    width: 20px;
+    height: 30px;
+    width: auto;                     
+    height: 78%;
+    display: block;
+    /* cursor: pointer; */
+    /* background-color:  rgb(103, 116, 103);
+    border-color: rgb(103, 116, 103); */
+    
+}
+.seekbar {
+    background-color: black;
+    position: relative;
+    border: 2px black;
+    bottom: 2px;
+    height: 3px;
+    margin: 4px 13px;
+    cursor: pointer;
+}
+
+.seekbarfull{
+    background-color: white;
+    width: 0%;
+    border: 2px white;
+    position: relative;
+    left: 0%;
+    bottom: 0px;
+    transition: 1s ease;
+}
+
+.seekbutton{
+    background-color: white;
+    height: 9px;
+    width: 9px;
+    position: relative;
+    left: 0%;
+    bottom: 4px;
+    border-radius: 65%;
+    transition: 1s ease;
+}
